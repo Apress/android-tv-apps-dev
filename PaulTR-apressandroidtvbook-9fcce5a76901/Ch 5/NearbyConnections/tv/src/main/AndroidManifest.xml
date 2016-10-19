@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apress.nearbyconnections">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:isGame="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback">
+
+    <meta-data android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
+        android:value="@string/service_id" />
+
+        <activity
+            android:name="MainActivity"
+            android:label="@string/app_name"
+            android:logo="@mipmap/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

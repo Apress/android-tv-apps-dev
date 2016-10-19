@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="search_button_color">#FFA500</color>
+    <color name="preference_card_background">#AAAAAA</color>
+</resources>

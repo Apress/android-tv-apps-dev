@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NearbyConnections</string>
+
+    <string name="service_id">Apress Service Id</string>
+</resources>

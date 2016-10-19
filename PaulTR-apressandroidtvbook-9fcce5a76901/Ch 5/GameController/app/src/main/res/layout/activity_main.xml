@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button A: "/>
+
+        <TextView
+            android:id="@+id/button_a"
+            android:layout_toRightOf="@+id/label_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_not_pressed"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button B: "/>
+
+        <TextView
+            android:id="@+id/button_b"
+            android:layout_toRightOf="@+id/label_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_not_pressed"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button X: "/>
+
+        <TextView
+            android:id="@+id/button_x"
+            android:layout_toRightOf="@+id/label_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_not_pressed"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Y: "/>
+
+        <TextView
+            android:id="@+id/button_y"
+            android:layout_toRightOf="@+id/label_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_not_pressed"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button R1: "/>
+
+        <TextView
+            android:id="@+id/button_r1"
+            android:layout_toRightOf="@+id/label_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_not_pressed"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button L2: "/>
+
+        <TextView
+            android:id="@+id/button_l1"
+            android:layout_toRightOf="@+id/label_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_not_pressed"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_joystick_1_axis_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joystick 1 Axis X: "/>
+
+        <TextView
+            android:id="@+id/joystick_1_axis_x"
+            android:layout_toRightOf="@+id/label_joystick_1_axis_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_joystick_1_axis_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joystick 1 Axis Y: "/>
+
+        <TextView
+            android:id="@+id/joystick_1_axis_y"
+            android:layout_toRightOf="@+id/label_joystick_1_axis_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_joystick_2_axis_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joystick 2 Axis X: "/>
+
+        <TextView
+            android:id="@+id/joystick_2_axis_x"
+            android:layout_toRightOf="@+id/label_joystick_2_axis_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_joystick_2_axis_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joystick 2 Axis Y: "/>
+
+        <TextView
+            android:id="@+id/joystick_2_axis_y"
+            android:layout_toRightOf="@+id/label_joystick_2_axis_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

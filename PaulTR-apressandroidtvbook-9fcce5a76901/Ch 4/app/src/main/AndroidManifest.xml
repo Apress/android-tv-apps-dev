@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apress.mediaplayer">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+        <activity
+            android:name="MainActivity"
+            android:label="@string/app_name"
+            android:logo="@mipmap/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<activity android:name=".VideoDetailsActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.SEARCH" />
+    </intent-filter>
+
+    <meta-data android:name="android.app.searchable"
+        android:resource="@xml/searchable" />
+</activity>
+
+        <activity android:name=".PlayerActivity" />
+        <activity android:name=".MediaSearchActivity" />
+        <activity android:name=".SettingsActivity" />
+
+        <service android:name=".RecommendationService"
+            android:enabled="true" />
+
+        <provider android:name=".VideoContentProvider"
+            android:authorities="com.apress.mediaplayer"
+            android:exported="true" />
+
+        <receiver android:name=".BootupReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
